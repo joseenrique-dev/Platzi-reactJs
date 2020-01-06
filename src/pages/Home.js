@@ -48,8 +48,15 @@ class Home extends Component {
                 <BadgeDetailComponent />
               </Route>
               <Route exact path="/create">
-                <BadgeComponent />
-                <Form />
+                <BadgeComponent  
+                firstName={this.state.form.FirstName}
+                LastName={this.state.form.LastName}
+                email={this.state.form.email}
+                jobtitle={this.state.form.jobtitle}
+                twitter={this.state.form.twitter}
+                />
+                <Form onChange={this.handleChange}
+                formValues={this.state.form} />
               </Route>
               <Footer />
             </div>

@@ -21,15 +21,16 @@ class BadgeComponent extends Component {
                   </div>
                   <div className="col-sm">
                     <h1 className="offset-md-2 mt-5 mr-5 mt-4">
-                      
+                      {this.props.firstName} <br />
+                      {this.props.LastName}
                     </h1>
                   </div>
                 </div>
               </div>
               <div className="alert alert-dark mt-5" role="alert">
-                <h1 className="offset-md-5"></h1>
+                <h1 className="offset-md-5"> {this.props.jobtitle}</h1>
                 <br />
-                <h3 className="offset-md-5"></h3>
+                <h3 className="offset-md-5"> @{this.props.twitter}</h3>
               </div>
               <div className="footer offset-md-5">
                 <h5 id="Badgefooter ml-5"> #Footer </h5>

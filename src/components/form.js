@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Form extends Component {
- 
+  
   render() {
     return (
       <div className="col-md-6">
@@ -16,7 +16,8 @@ class Form extends Component {
               type="text"
               className="form-control"
               name="FirstName"
-             
+              onChange={this.props.onChange}
+              value={this.props.formValues.firstName}
             />
           </div>
           <div className="form-group">
@@ -25,6 +26,8 @@ class Form extends Component {
               type="text"
               className="form-control"
               name="LastName"
+              onChange={this.props.onChange}
+              value={this.props.formValues.LastName}
             />
           </div>
           <div className="form-group">
@@ -33,6 +36,8 @@ class Form extends Component {
               type="email"
               className="form-control"
               name="email"
+              onChange={this.props.onChange}
+              value={this.props.formValues.email}
             />
           </div>
           <div className="form-group">
@@ -41,6 +46,8 @@ class Form extends Component {
               type="text"
               className="form-control"
               name="jobtitle"
+              onChange={this.props.onChange}
+              value={this.props.formValues.jobtitle}
             />
           </div>
           <div className="form-group">
@@ -49,6 +56,8 @@ class Form extends Component {
               type="text"
               className="form-control"
               name="twitter"
+              onChange={this.props.onChange}
+              value={this.props.formValues.twitter}
             />
           </div>
           <div className="form-group form-check">
